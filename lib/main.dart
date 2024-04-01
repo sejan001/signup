@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "login.dart";
 import 'package:shared_preferences/shared_preferences.dart';
+// import "login.dart";
 
 void main() {
   runApp(MaterialApp(
@@ -95,16 +96,18 @@ class _SignupState extends State<Signup> {
                       },
                       controller: _password,
                       decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: "Enter Password",
-                          hintText: "Password",
-                          suffix: IconButton(
-                              onPressed: () {
-                                setState(() {
-                                  _showpass = !_showpass;
-                                });
-                              },
-                              icon: Icon(Icons.remove_red_eye))),
+                        border: OutlineInputBorder(),
+                        labelText: "Enter Password",
+                        hintText: "Password",
+                        suffix: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              _showpass = !_showpass;
+                            });
+                          },
+                          icon: Icon(Icons.remove_red_eye),
+                        ),
+                      ),
                       obscureText: _showpass,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -122,6 +125,7 @@ class _SignupState extends State<Signup> {
             SizedBox(
               height: 10,
             ),
+            // saugdausgdasdv
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
