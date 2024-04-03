@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import "login.dart";
 import 'package:shared_preferences/shared_preferences.dart';
-// import "login.dart";
+
 
 void main() {
   runApp(MaterialApp(
@@ -125,7 +125,7 @@ class _SignupState extends State<Signup> {
             SizedBox(
               height: 10,
             ),
-            // saugdausgdasdv
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
